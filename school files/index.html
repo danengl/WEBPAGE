@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBPAGE</title>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'metana';
+            src: url(assets/neue_metana/NeueMetana-Bold.otf);
+        }
+
+        body{
+            background: url(assets/globe.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar a {
+            color:hwb(0 100% 0%);
+            text-decoration: none;
+            padding: 10px 15px;
+            font-family: 'metana', Arial, sans-serif;
+            font-size: 20px;
+            transition: ease-in-out 0.3s;
+        }
+
+        header {
+            position:  fixed;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            padding: 20px;
+        }
+
+        header .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1800px;
+            
+        }
+
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            
+        }
+
+        .navbar .logo{
+            font-weight: 800;
+        }
+
+        .navbar a:hover{
+            color: hsl(0, 0%, 9%);
+            text-shadow: 10px 15px 30px #9c9c9c;
+            
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'metana', Arial, sans-serif;
+            padding: 0 20px;
+            color: #ffffff;
+        }
+
+         .content h1{
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        .intro .content p{
+            font-size: 18px;
+            margin-top: 20px;
+            max-width: 900px;
+            transition: ease-in-out 0.3s;
+            
+        }
+
+        .intro .content{
+            margin-right: 550px;
+        }
+
+        .intro .content:hover{
+            color: #0e0e0e;
+            text-shadow: 10px 15px 30px #9c9c9c;
+        }
+
+
+
+        #btn a{
+            text-decoration: none;
+            color: #ffffff;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            outline: none;
+            border: none;
+            transition: ease-in-out 0.3s;
+        }
+        #btn{
+            background-color: #1e1e1e;
+            padding: 15px 20px;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            transition: ease-in-out 0.3s;
+            
+
+        }
+
+        #btn a:hover{
+            color: #0e0e0e;
+        }
+
+        #btn:hover{
+            background-color: #4b4b4b;
+        }
+
+        
+
+    </style>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" id="logo"><h3>INTERNET OF THINGS</h3></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about us .html">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="content">
+            <h1>INTRODUCTION TO INTERNET AND INTERNET BASIC</h1>
+        <p>A worldwide collection of computer networks that links millions of computers used by business,
+             the government, educational
+             institutions, organizations, and individuals using modems, phone lines, television cables,
+              satellite links, and other communications devices and media.
+        </p>
+        <button id="btn"><a href="module1.html">EXPLORE MODULES</a></button>
+        </div>
+    </section>
+    
+</body>
+</html>

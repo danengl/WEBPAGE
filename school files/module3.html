@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBPAGE</title>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'metana';
+            src: url(assets/neue_metana/NeueMetana-Bold.otf);
+        }
+
+
+        body{
+            background-image: url(assets/module3.png);
+            background-size: cover;
+            
+           
+        }
+
+        .maincontainer{
+            position: relative;
+            height: 80vh;
+            width: 50%;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+
+        .card{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: ease-in-out 0.5s;
+           
+        }
+
+        .front{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            
+        }
+
+        .front .hero .front{
+            color: white;
+            background-image: linear-gradient(to right, rgba(155, 150, 150, 0.207), rgb(141, 139, 139));
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 20px;
+            font-family: 'metana', Arial, sans-serif;
+            border-radius: 50px;
+            backdrop-filter: blur(50px);
+            box-shadow: 10px 15px 20px #9c9c9c6e;
+            text-shadow: 10px 20px 20px #bfbfbf9b;
+          
+        } 
+
+        .back{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: ease-in-out 0.5s;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+        }
+
+        .back .backb .contentb{
+            color: white;
+            background-image: linear-gradient(to right, rgba(155, 150, 150, 0.207), rgb(141, 139, 139));
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 20px;
+            font-family: 'metana', Arial, sans-serif;
+            border-radius: 50px;
+            backdrop-filter: blur(50px);
+            box-shadow: 10px 15px 20px #e2e0e071;
+            position: absolute;
+            background-image: url(assets/module3.png);
+            max-height: 100vh;
+            text-shadow: 10px 20px 20px #6e6d6d79;
+            
+        }
+
+        #home {
+            text-decoration: none;
+            color: white;
+            font-family: 'metana', Arial, sans-serif;
+            font-size: 18px;
+            position: relative;
+            bottom: 840px;
+            left: 3%;
+            transition: ease-in-out 0.3s;
+        }
+
+        #home:hover {
+            color: rgb(69, 68, 68);
+            text-shadow: 10px 15px 20px #e2e0e071;
+        }
+        
+    </style>
+
+
+
+<div class="maincontainer">
+    <div class="card">
+
+        <div class="front">
+            <section class="hero">
+                <div class="front">
+                    <h1> HTML lists: Ordered and Unordered Lists</h1>
+                    <h3>In this lesson, we’ll explore list elements in HTML, focusing on unordered lists
+                         (< ul >) and ordered lists (< ol >). Lists are common on websites—from articles like 
+                         “Top 10 Must-Have Gadgets” to official lists like the “FBI’s Ten Most Wanted Fugitives.”
+                          Understanding how to create these lists will enhance your HTML skills.</h3>
+        
+        
+                <ol>
+                    <li> Unordered Lists (< ul >)
+                        <p>An unordered list is used when the order of items doesn’t matter 
+                            like a grocery list or a to-do list. These lists display items with bullet points.
+                        </p>
+                        <h3>Basic Structure:</h3>
+                        <p>
+                            < ul>
+        
+                            < li >Milk< /li >
+                          
+                            < li >Bread< /li >
+                          
+                            < li >Eggs< /li >
+                          
+                          < /ul >
+                        </p>
+                    </li>
+                    
+                </ol> 
+                <ul>
+                    <li>
+                        < ul >: Starts the unordered list (stands for unordered list).
+                    </li>
+                    <li>
+                        < li >: Each item inside the list is wrapped in a list item tag (< li >).
+                    </li>
+                    <li>
+                    < /ul >: Closes the unordered list.
+                    </li>
+                </ul>
+                <h3>Result: </h3>
+        
+                <ul>
+                    <li>Milk</li>
+                    <li>Bread</li>
+                    <li>Eggs</li>
+                </ul>
+                
+                
+                </div>
+            </section>
+        </div>
+
+
+    
+        <div class="back">
+            <section class="backb">
+                <div class="contentb">
+                <ol>
+                    <li>Ordered Lists </li>
+                   <h1> An ordered list is used when the sequence does matter—like instructions, rankings, 
+                    or steps in a process. These items are numbered automatically.
+        
+                   </h1>
+                      <h3>Basic Structure:</h3>
+                      <p>
+                        < ol >
+                        
+                          < li >Wake up< /li >
+                        
+                          < li >Brush your teeth< /li >
+                        
+                          < li >Have breakfast< /li >
+                        
+                        </ ol >
+                    </p>
+                </ol>
+        
+                <ul>
+                    <li>
+                        < ol >: Starts the ordered list (stands for ordered list).
+                    </li>
+                    <li>
+                        < li >: Again, each item is inside a list item tag (< li >).
+                    </li>
+                    <li>
+                        < /ol >: Closes the ordered list.
+                    </li>
+                </ul>
+                <h3>Result: </h3>
+                <ol>
+                    <li>Wake up</li>
+                    <li>Brush your teeth</li>
+                    <li>Have breakfast</li>
+                </ol>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    
+</div>
+
+<a href="index.html" id="home">Back to Homepage</a>
+</body>
+</html>
